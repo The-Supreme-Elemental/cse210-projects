@@ -1,22 +1,9 @@
-x = 5
-y = 4
-z = 4
+using System;
 
-
-
-
-
-
-
-if (x > y) 
+class Program
 {
-    Console. WriteLine("Greater Than");
-}
+    static void Main(string[] args)
+    {
 
-if (x > y) 
-{
-    if (x > y)
-    { 
-        Console.WriteLine("greater than both.");
     }
 }
