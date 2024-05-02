@@ -4,12 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is your first name? ");
-        string FirstName = Console.ReadLine();
+        Console.Write("What is the magic number? ");
+        string userinput = Console.ReadLine();
+        int number = int.Parse(userinput);
 
-        Console.Write("What is your last name? ");
-        string LastName = Console.ReadLine();
+        Console.Write("What is your guess? ");
+        
+    }
 
-        Console.WriteLine($"Your name is {LastName}, {FirstName} {LastName}.");
+    private static string ConsoleReadLine()
+    {
+        throw new NotImplementedException();
     }
 }
