@@ -5,16 +5,21 @@ class Program
 {
     static void Main(string[] args)
     {
+        int numberGuess;
+
+        Random randomGenerator = new Random();
+        int number = randomGenerator.Next(1,100);
+
+
+        // Console.Write("What is the magic number? ");
+        // string userInput = Console.ReadLine();
+        // int number = int.Parse(userInput);
         do 
         {
 
-            Console.Write("What is the magic number? ");
-            string userInput = Console.ReadLine();
-            int number = int.Parse(userInput);
-
             Console.Write("What is your guess? ");
             string userGuess = Console.ReadLine();
-            int numberGuess = int.Parse(userGuess);
+            numberGuess = int.Parse(userGuess);
 
             if (numberGuess < number)
             {
@@ -22,7 +27,7 @@ class Program
 
 
             }
-            if (numberGuess > number)
+            else if (numberGuess > number)
             {
                 Console.WriteLine("Try a lower number. ");
             }
@@ -30,12 +35,14 @@ class Program
             else 
             {
                 Console.Write("You guessed it! Congratulations! ");
-            };
+            }
         } while (numberGuess != number);
-
-
-    private static string ConsoleReadLine()
-    {
-        throw new NotImplementedException();
     }
-}}
+}
+
+
+//     // private static string ConsoleReadLine()
+//     {
+//         throw new NotImplementedException();
+//     }
+// }}
