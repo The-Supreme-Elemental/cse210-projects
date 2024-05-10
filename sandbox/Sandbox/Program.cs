@@ -1,13 +1,18 @@
 using System;
+using System.Runtime.InteropServices;
 
 class Program
 {
     static void Main(string[] args)
     {
-        for (int x=0;x<9;x++) 
-        {
-            Console.WriteLine("The Most Interesting Thing");
-        }
+            Course course1 = new Course();
+            course1._className = "Prog. w/Classes";
+            course1._color = "green";
+            course1._courseCode = "CSE 201";
+            course1._numberOfCredits = 2;
+            course1.Display();
+            
    }
+   
 
 }
