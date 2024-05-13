@@ -1,3 +1,6 @@
+// This program will accept inputs and display them in a Bond, James Bond format. 
+
+
 using System;
 using System.Globalization;
 
@@ -10,6 +13,9 @@ class Program
 
         // This will ask the user for their first and last names. 
         Console.WriteLine("What is your first name? ");
+        Console.WriteLine("What is your last name? ");
+
+        // This will display the names recieved above. 
 
     }
 }
