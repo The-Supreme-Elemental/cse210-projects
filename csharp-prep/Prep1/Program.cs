@@ -3,19 +3,29 @@
 
 using System;
 using System.Globalization;
+using System.IO.Compression;
 
 class Program
 {
     static void Main(string[] args)
     {
         // Displays a greeting to the user. 
-        Console.Write("Hello there!");
+        Console.WriteLine("Hello there! \n"); // WriteLine makes a new line afterwards. 
 
         // This will ask the user for their first and last names. 
-        Console.WriteLine("What is your first name? ");
-        Console.WriteLine("What is your last name? ");
 
-        // This will display the names recieved above. 
+        // prompt, input is received on the same line. 
+        Console.Write("What is your first name? ");
+        // acceptance of prompt
+        string firstName = Console.ReadLine();
 
+        // prompt
+        Console.Write("What is your last name? ");
+        // acceptance
+        string lastName = Console.ReadLine();
+        Console.WriteLine();
+
+        // This will display the names recieved above in the format (last), (first) (last)
+        Console.WriteLine($"Your name is {lastName}, {firstName} {lastName}. ");
     }
 }
