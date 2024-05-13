@@ -5,44 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        int numberGuess;
+        // Displays a greeting to the user. 
+        Console.Write("Hello there!");
 
-        Random randomGenerator = new Random();
-        int number = randomGenerator.Next(1,100);
+        // This will ask the user for their first and last names. 
+        Console.WriteLine("What is your first name? ");
 
-
-        // Console.Write("What is the magic number? ");
-        // string userInput = Console.ReadLine();
-        // int number = int.Parse(userInput);
-        do 
-        {
-
-            Console.Write("What is your guess? ");
-            string userGuess = Console.ReadLine();
-            numberGuess = int.Parse(userGuess);
-
-            if (numberGuess < number)
-            {
-                Console.WriteLine("Try a higher number. ");
-
-
-            }
-            else if (numberGuess > number)
-            {
-                Console.WriteLine("Try a lower number. ");
-            }
-
-            else 
-            {
-                Console.Write("You guessed it! Congratulations! ");
-            }
-        } while (numberGuess != number);
     }
 }
-
-
-//     // private static string ConsoleReadLine()
-//     {
-//         throw new NotImplementedException();
-//     }
-// }}
