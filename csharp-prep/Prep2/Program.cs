@@ -9,5 +9,10 @@ class Program
         Console.Write("What grade did you achieve? ");
         string grade = Console.ReadLine();
         int number = int.Parse(grade);
+
+        if (number == 100)
+        {
+
+        }
     }
 }

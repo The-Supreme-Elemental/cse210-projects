@@ -4,8 +4,7 @@ public class Prompt
 {
     // Create the empty list _listOfPrompt
     public List<string> _listOfPrompt = new List<string>();
-
-    // Storing the random prompt 
+        // Storing the random prompt 
     public string _prompt;
 
     // This is where several different prompts are laid out, where we will pick one 
