@@ -1,6 +1,6 @@
 using System.Drawing;
 
-public abstract class Shape {
+public class Shape {
 
-    public abstract double Area { get; }
+    public double Area { get; }
 }
