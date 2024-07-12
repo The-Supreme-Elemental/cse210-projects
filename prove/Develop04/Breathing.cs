@@ -32,7 +32,6 @@ class Breathing : Activity
         //     Thread.Sleep(_duration / 4);
         // }
 
-        Console.WriteLine("Thank you for participating. I hope this helped!");
     }
 
 

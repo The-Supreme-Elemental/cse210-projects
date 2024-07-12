@@ -25,7 +25,7 @@ public class Activity
 
     public void InteractEpilogue()
     {
-        Console.WriteLine($"Thank you for your time. I'll see you soon.");
+        Console.WriteLine("Thank you for participating. I hope this helped!");
     }
 
     public static string Menu()
