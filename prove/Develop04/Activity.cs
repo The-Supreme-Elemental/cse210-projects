@@ -13,7 +13,7 @@ public abstract class Activity
     }
     public void GetDuration()
     {
-        Console.Write("How much time would you like to devote to this activity, in seconds? \n\n");
+        Console.Write("How much time would you like to devote to this activity, in seconds? \n\n    ");
         _duration = int.Parse(Console.ReadLine());
     }
 
