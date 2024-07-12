@@ -35,11 +35,5 @@ class Breathing : Activity
         Console.WriteLine("Thank you for participating. I hope this helped!");
     }
 
-    public override void Run()
-    {
-        GetDuration();
-        InteractBreathing();
-
-    }
 
 }

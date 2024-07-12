@@ -1,6 +1,6 @@
 using System.ComponentModel.Design;
 
-public abstract class Activity
+public class Activity
 {
     protected int _duration;
     protected string _message;
@@ -13,7 +13,7 @@ public abstract class Activity
     }
     public void GetDuration()
     {
-        Console.Write("How much time would you like to devote to this activity, in seconds? \n\n    ");
+        Console.Write("How much time would you like to devote to this activity, in seconds? \n\n");
         _duration = int.Parse(Console.ReadLine());
     }
 
@@ -35,7 +35,12 @@ public abstract class Activity
         return choice;
     }
 
-    public abstract void Run();
+    public void Run()
+    {
+        GetDuration();
+        Console.WriteLine("Get ready...");
+        makeAnimation(3);
+    }
 
     public void makeAnimation(int times, List<string> frames = null, int pauseTime = 250) 
     {

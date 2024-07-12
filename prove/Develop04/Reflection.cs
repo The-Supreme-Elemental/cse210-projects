@@ -21,6 +21,14 @@ class Reflection : Activity
         string prompt = prompts[number];
         Console.WriteLine(prompts[number]);
 
+        Console.WriteLine("\nWhen you have something in mind, press enter to continue.");
+        Console.ReadLine();
+        Console.WriteLine();
+        Console.WriteLine("Now ponder on each of the following questions as they related to this experience.");
+        Thread.Sleep(5);
+        Console.Clear();
+
+
         List<string> reflectPrompts = new List<string>()
         {
             "Why was this experience meaningful to you?",
@@ -33,11 +41,17 @@ class Reflection : Activity
             "What did you learn about yourself through this experience?",
             "How can you keep this experience in mind in the future?"
         };
-    }
-    public override void Run()
-    {
-        GetDuration();
-        InteractReflection();
+
+        DateTime time = DateTime.Now;
+        DateTime futureTime = time.AddSeconds(_duration);
+        while (DateTime.Now < futureTime)
+        {
+            random = new Random();
+            number = random.Next(reflectPrompts.Count());
+            prompt = reflectPrompts[number];
+            Console.WriteLine(reflectPrompts[number]);
+            makeAnimation(15, null, 250);
+        }
     }
 
 
