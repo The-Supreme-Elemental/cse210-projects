@@ -4,7 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        ChecklistGoal checklistGoal = new ChecklistGoal{"quote", "Temple quote", 10, 3, 30};
+        
 
         
     }
