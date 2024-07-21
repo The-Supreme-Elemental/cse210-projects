@@ -24,6 +24,7 @@ public class Address
         if (userInput == "inside")
         {
             IsDomestic = true;
+
         } else {
             IsDomestic = false;
         }

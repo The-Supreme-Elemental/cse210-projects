@@ -12,4 +12,9 @@ public class Product
         _pricePerUnit = pricePerUnit;
         _quantity = quantity;
     }
+
+    public decimal GetTotalCost()
+    {
+        return _pricePerUnit * _quantity;
+    }
 }
