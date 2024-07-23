@@ -13,8 +13,24 @@ public class Product
         _quantity = quantity;
     }
 
-    public decimal GetTotalCost()
+    public decimal TotalCost()
     {
         return _pricePerUnit * _quantity;
     }
+
+    public string GetProductName()
+    {
+        return _name;
+    }
+
+    public string GetProductID()
+    {
+        return _id;
+    }
+
+    public decimal GetCost()
+    {
+        return _pricePerUnit;
+    }
+
 }

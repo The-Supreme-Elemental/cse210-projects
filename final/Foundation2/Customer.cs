@@ -9,9 +9,9 @@ public class Customer
         _address = address;
     }
 
-    public bool IsDomesticUSA()
+    public bool DomesticUSA()
     {
-        return IsDomesticUSA();
+        return _address.IsDomesticUSA();
 
 
     }
@@ -23,7 +23,7 @@ public class Customer
 
     public string GetAddress()
     {
-        return $"{_address}";
+        return $"{_address.GetAddressLabel()}";
     }
 
 }

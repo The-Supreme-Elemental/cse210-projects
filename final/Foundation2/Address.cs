@@ -17,18 +17,19 @@ public class Address
 
     public bool IsDomesticUSA()
     {
-        bool IsDomestic = false;
+        bool isDomestic = false;
 
-        Console.Write("Is this package going in or outside of the US? (inside/outside)");
-        string userInput = Console.ReadLine();
-        if (userInput == "inside")
+        // Console.Write("Is this package going in or outside of the US? (inside/outside)");
+        // string userInput = Console.ReadLine();
+        // if (userInput == "inside")
+        if (_country == "USA")
         {
-            IsDomestic = true;
+            isDomestic = true;
 
         } else {
-            IsDomestic = false;
+            isDomestic = false;
         }
-        return IsDomestic;
+        return isDomestic;
     }
 
     public string GetAddressLabel()
