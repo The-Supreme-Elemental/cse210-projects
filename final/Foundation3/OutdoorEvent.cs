@@ -10,7 +10,7 @@ public class OutdoorEvent : Event
     public string GetFullDetails()
     {
         string details = GetStandardDetails();
-        details += $"\n \nThe weather is going to be{_weatherStatement}";
+        details += $"\n \nThe weather is going to be {_weatherStatement}";
         return details;
     }
 

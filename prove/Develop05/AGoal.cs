@@ -6,7 +6,7 @@ public abstract class AGoal
     protected string _title;
     protected string _desc;
     protected int _score;
-    private int _cumulativeScore;
+    private static int _cumulativeScore;
 
 
     public AGoal(string title, string desc)
@@ -15,9 +15,14 @@ public abstract class AGoal
         _desc = desc;
     }
 
-    public int GetCumulativeScore()
+    public static int GetCumulativeScore()
     {
         return _cumulativeScore;
+    }
+
+    public static void SetCumulativeScore(int cumulativeScore)
+    {
+        _cumulativeScore = cumulativeScore;
     }
     
     public abstract void Award();
